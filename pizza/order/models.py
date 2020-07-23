@@ -5,6 +5,7 @@ class Pizza(models.Model):
     Flavor = models.CharField(max_length = 20)
     size = models.CharField(max_length=10)
     toppings= models.IntegerField()
+    quantity=models.IntegerField()
     def __str__(self):
         return " Flavor: {}, Size: {}".format(self.Flavor,self.size)
 
