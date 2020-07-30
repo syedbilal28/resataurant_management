@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Penny Pay | Sign up </title>
+</head>
+<body>
+    <h1>Sign up</h1>
+    <form action ="{% url 'Signup' %}">
+        <h3>Name</h3>
+        <input name="customer_name" type="text">
+        <h3>Password</h3>
+        <input name="password" type="password">
+        <h3>Contact number</h3>
+        <input name ="contact_number" type="text">
+        <button>Submit</button>
+    </form>
+</body>
+</html>
