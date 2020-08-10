@@ -14,6 +14,7 @@ def Login_page(request):
 def SignUp(request):
     username = request.POST.get("customer_name",False)
     password = request.POST.get("password",False)
+
     number= request.POST.get("contact_number",False)
     user= User.objects.create_user(username=username,password=password)
     customer= Customer.objects.create(user=user,contact=number)
@@ -33,6 +34,9 @@ def Login(request):
         return render(request,"menu.html")
     else:
         return render(request,"error.html")
+
+
+
 def Logout(request):
     logout(request)
     return render(request,"menu.html")

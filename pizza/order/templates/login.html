@@ -8,6 +8,7 @@
     <h1>Login</h1>
     <form action ="{% url 'Login' %}" method = "post">
         {% csrf_token %}
+
         <h3>Name</h3>
         <input name="customer_name" type="text">
         <h3>Password</h3>
