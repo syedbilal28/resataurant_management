@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ Customer_name }}</title>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="{% url 'Signup_page' %}">Sign up</a></li>
-            <li><a href="{% url 'Login_page' %}">Login</a></li>
-            <li><a href = "{% url 'Logout' %}">Sign Out</a></li>
-        </ul>
-    </nav>
-    <h1>Orders</h1>
+{% extends "layout.html" %}
+{% block title %}
+Menu
+{% endblock %}
+{% block body %}
+<h1>Orders</h1>
 
-</body>
-</html>
+{% endblock %}

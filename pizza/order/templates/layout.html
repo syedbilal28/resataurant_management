@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Penny Pay | {%block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'Signup_page' %}">Sign up</a></li>
+            <li><a href="{% url 'Login_page' %}">Login</a></li>
+            <li><a href = "{% url 'Logout' %}">Sign Out</a></li>
+        </ul>
+    </nav>
+    {% block body %}
+
+    {% endblock %}
+</body>
+</html>
